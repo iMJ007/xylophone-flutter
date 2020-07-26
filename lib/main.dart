@@ -31,6 +31,7 @@ class XylophoneApp extends StatelessWidget {
 
   Expanded buildKeys({int noteNumber, Color color}) {
     return Expanded(
+      // This works like the weight property in android xml with a value of flex deciding the weight
       child: FlatButton(
         onPressed: () {
           playSound(noteNumber);
